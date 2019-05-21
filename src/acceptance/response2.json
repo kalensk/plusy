@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "message": {
+        "chat": {
+          "all_members_are_administrators": true,
+          "id": -276219865,
+          "title": "Testy Plusy",
+          "type": "group"
+        },
+        "date": 1539250891,
+        "from": {
+          "first_name": "fuzzie",
+          "id": 260754952,
+          "is_bot": false,
+          "language_code": "en-US",
+          "username": "fuzzie_wuzzie"
+        },
+        "message_id": 93,
+        "text": "test"
+      },
+      "update_id": 28839503
+    },
+    {
+      "message": {
+        "chat": {
+          "all_members_are_administrators": true,
+          "id": -276219865,
+          "title": "Testy Plusy",
+          "type": "group"
+        },
+        "date": 1539250917,
+        "from": {
+          "first_name": "brain",
+          "id": 308188500,
+          "is_bot": false,
+          "last_name": "fister"
+        },
+        "message_id": 94,
+        "text": "pass"
+      },
+      "update_id": 28839504
+    },
+    {
+      "message": {
+        "chat": {
+          "all_members_are_administrators": true,
+          "id": -276219865,
+          "title": "Testy Plusy",
+          "type": "group"
+        },
+        "date": 1539250930,
+        "from": {
+          "first_name": "fuzzie",
+          "id": 260754952,
+          "is_bot": false,
+          "language_code": "en-US",
+          "username": "fuzzie_wuzzie"
+        },
+        "message_id": 95,
+        "text": "quite you! :p"
+      },
+      "update_id": 28839505
+    },
+    {
+      "message": {
+        "chat": {
+          "all_members_are_administrators": true,
+          "id": -276219865,
+          "title": "Testy Plusy",
+          "type": "group"
+        },
+        "date": 1539250947,
+        "from": {
+          "first_name": "brain",
+          "id": 308188500,
+          "is_bot": false,
+          "last_name": "fister"
+        },
+        "message_id": 96,
+        "text": "+1"
+      },
+      "update_id": 28839506
+    }
+  ]
+}

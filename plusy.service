@@ -1,0 +1,12 @@
+[Unit]
+Description=Plusy
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/plusy --token "<bot-api-token>"
+Restart=on-failure
+WorkingDirectory=/tmp
+
+[Install]
+WantedBy=multi-user.target

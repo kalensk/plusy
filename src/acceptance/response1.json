@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "message": {
+        "chat": {
+          "all_members_are_administrators": true,
+          "id": -276219865,
+          "title": "Testy Plusy",
+          "type": "group"
+        },
+        "date": 1539250891,
+        "from": {
+          "first_name": "fuzzie",
+          "id": 340645852,
+          "is_bot": false,
+          "language_code": "en-US",
+          "username": "fuzzie_wuzzie"
+        },
+        "message_id": 92,
+        "text": "previous message"
+      },
+      "update_id": 28839502
+    }
+  ]
+}
