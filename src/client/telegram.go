@@ -209,7 +209,7 @@ func (t *Telegram) ProcessCommand(message *messages.Message, cmdPosition int) er
 
 	text := *message.Text
 	textRune := []rune(text)
-	command := string(textRune[0:cmdPosition])
+	command := string(textRune[0:cmdPosition]) // ToDo: write test first and then change this to 1:cmdPosition and then remove the leading / in the switch statement
 	command = strings.SplitN(command, "@", 2)[0] // normalize command since it can be "/stats@plusyTestBot"
 
 	args := strings.TrimSpace(string(textRune[cmdPosition:]))
@@ -217,7 +217,7 @@ func (t *Telegram) ProcessCommand(message *messages.Message, cmdPosition int) er
 	switch command {
 	case "/stats":
 		return t.processStatsCommand(chatId, args)
-	case "/topstats":
+	case "/topstats", "/top":
 		return t.processTopStatsCommand(chatId)
 	case "/donut":
 		return t.processDonutCommand(chatId)
