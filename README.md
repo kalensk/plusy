@@ -1,7 +1,7 @@
 # Plusy
 
 plusy is an [inline Telegram bot](https://core.telegram.org/bots/inline) that records and provides statistics when someone in a chat `+1`'s an individual.
-It is a simple project to help me better learn golang and redis. 
+It is a simple project to help me better learn golang and redis.
 
 # Using Plusy
 If you do not want to run your own plusy server
@@ -11,10 +11,10 @@ If you do not want to run your own plusy server
 To run your own plusy server
 
 1. start the database
-  - `make database type=redis` other types are postgres or neo4j 
+  - `make database type=redis` other types are postgres or neo4j
 1. start plusy
  - `make install`
- 
+
 
 
 
@@ -32,7 +32,7 @@ Top Receivers: Dan 1, bob 1
 Command: `@plusy help`
 Sample Output:
 ```
-@plusy stats 
+@plusy stats
 ```
 
 
@@ -62,9 +62,9 @@ bob: +1
 
 
 And the plusy table would look something like:  
-giver |  receiver | msg_text | msg_datetime | 
----|---|--- 
-bob | alice | "i like turtles" 
+giver |  receiver | msg_text | msg_datetime |
+---|---|---
+bob | alice | "i like turtles"
 
 
 # Gif of showing it work in action
@@ -163,7 +163,7 @@ func Test_Acceptance(t *testing.T) {
 		fmt.Println(request.Method)
 		fmt.Println(request.RequestURI)
 		fmt.Println(request.Body)
-	
+
 		if strings.Contains(request.URL.Path, "getUpdates") {
 			respWriter.WriteHeader(200)
 			respWriter.Header().Add("Content-Type", "application/json")
@@ -173,16 +173,16 @@ func Test_Acceptance(t *testing.T) {
 			}
 			count++
 		}
-	
+
 		if strings.Contains(request.URL.Path, "sendMessage") {
 			requestBytes, err := ioutil.ReadAll(request.Body)
 			if err != nil {
 				panic(err)
 			}
-	
+
 			fmt.Println(string(requestBytes))
 		}
-	
+
 	}))
 	defer testServer.Close()
 
@@ -208,4 +208,11 @@ func Test_Acceptance(t *testing.T) {
 }
 
 ```
- 
+
+# Future work
+
+- implement PID file
+- containerize plusy
+- Fix possible issue where it is not returning the current count after giving a point.
+- Add more quotes
+ - http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
